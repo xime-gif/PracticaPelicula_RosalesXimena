@@ -55,15 +55,39 @@
         android:id="@+id/btnRentar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="378dp" />
+        android:layout_marginStart="74dp"
+        android:layout_marginBottom="305dp"
+        android:text="Rentar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnComprar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="378dp" />
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="305dp"
+        android:text="Comprar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivStar"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="6,3/10"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="296dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
