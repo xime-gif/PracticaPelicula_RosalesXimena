@@ -33,43 +33,45 @@
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginBottom="448dp"
         android:fontFamily="sans-serif-black"
-        android:text="Uptown Girls"
+        android:text="@string/uptown_girls"
         android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHeader" />
 
     <ImageView
         android:id="@+id/ivDownload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginBottom="451dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="26dp"
         app:layout_constraintStart_toEndOf="@+id/tvTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/ivHeader"
         app:srcCompat="@drawable/baseline_save_alt_24" />
 
     <Button
         android:id="@+id/btnRentar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="74dp"
-        android:layout_marginBottom="305dp"
-        android:text="Rentar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple"
+        android:text="@string/rentar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPoster" />
 
     <Button
         android:id="@+id/btnComprar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="305dp"
-        android:text="Comprar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="72dp"
+        android:backgroundTint="@color/light_purple"
+        android:text="@string/comprar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivStar" />
 
     <ImageView
         android:id="@+id/ivStar"
@@ -85,9 +87,113 @@
         android:id="@+id/tvRating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="87dp"
         android:fontFamily="sans-serif-black"
-        android:text="6,3/10"
+        android:text="@string/_6_3_10"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="296dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/_51mil"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprar"
+        app:layout_constraintStart_toEndOf="@+id/ivStar" />
+
+    <TextView
+        android:id="@+id/tvSinopsis"
+        android:layout_width="341dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/sinopsis"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenero" />
+
+    <TextView
+        android:id="@+id/tvGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/g_nero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRentar" />
+
+    <TextView
+        android:id="@+id/tvRomance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/romance"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/tvGenero"
+        app:layout_constraintTop_toBottomOf="@+id/btnRentar" />
+
+    <TextView
+        android:id="@+id/tvComedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/comedia"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/tvRomance"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprar" />
+
+    <TextView
+        android:id="@+id/tvDrama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/drama"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/tvComedia"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprar" />
+
+    <TextView
+        android:id="@+id/tvMelodrama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/melodrama"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/tvDrama"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprar" />
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSinopsis"
+        app:srcCompat="@drawable/like" />
+
+    <ImageView
+        android:id="@+id/ivHeart"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSinopsis"
+        app:srcCompat="@drawable/heart" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
