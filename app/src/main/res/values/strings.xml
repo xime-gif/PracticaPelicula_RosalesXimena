@@ -12,4 +12,7 @@
     <string name="drama">Drama</string>
     <string name="melodrama">Melodrama</string>
     <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="contrasenia_olvidada">¿Olvidaste la contraseña?</string>
+    <string name="entrar">Entrar</string>
+    <string name="registrar">¿No tienes cuenta? Regístrate</string>
 </resources>

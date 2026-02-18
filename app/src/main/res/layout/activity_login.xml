@@ -34,4 +34,66 @@
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivPopcorn" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="13dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIniciarSesion" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="376dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <TextView
+        android:id="@+id/tvContraseniaOlvidada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="126dp"
+        android:text="@string/contrasenia_olvidada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="166dp"
+        android:text="@string/entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContraseniaOlvidada" />
+
+    <TextView
+        android:id="@+id/tvRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="113dp"
+        android:text="@string/registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
