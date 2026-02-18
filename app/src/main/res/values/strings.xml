@@ -11,4 +11,5 @@
     <string name="comedia">Comedia</string>
     <string name="drama">Drama</string>
     <string name="melodrama">Melodrama</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
 </resources>
