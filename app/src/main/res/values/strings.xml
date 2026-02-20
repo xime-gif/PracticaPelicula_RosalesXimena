@@ -15,4 +15,6 @@
     <string name="contrasenia_olvidada">¿Olvidaste la contraseña?</string>
     <string name="entrar">Entrar</string>
     <string name="registrar">¿No tienes cuenta? Regístrate</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
 </resources>
