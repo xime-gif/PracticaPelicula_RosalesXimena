@@ -3,7 +3,12 @@
     <style name="Base.Theme.PracticaPelicula_RosalesXimena" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <item name="colorPrimary">@color/soft_purple</item>
-        <item name="colorSecondary">#322733</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/plumb</item>
+        <item name="colorOnSecondary">@color/white</item>
         <item name="android:colorBackground">@color/dark_purple</item>
+        <item name="colorSurface">@color/dark_purple</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
     </style>
 </resources>
